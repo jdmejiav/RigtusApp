@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "301774015103",
+    "firebase_url": "https://rigctus-1f4dd.firebaseio.com",
+    "project_id": "rigctus-1f4dd",
+    "storage_bucket": "rigctus-1f4dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301774015103:android:32af7e03d2fa8a4f",
+        "android_client_info": {
+          "package_name": "co.rigctus.rigctus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301774015103-ukc06h5os468v597ok7van02smecmdj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuI5lbNwEdbYMhKdFbKL2bw9-EeAtdb7k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_inicio">
+
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="444dp"
+        android:layout_height="224dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imgfondoinicio" />
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+
+
+        android:shadowColor="@android:color/darker_gray"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgFondo"
+        app:layout_constraintVertical_bias="0.335"
+        app:srcCompat="@drawable/imgmenu" />
+
+    <TextView
+        android:id="@+id/txtMisCultivos"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:freezesText="false"
+
+        android:text="Mis Cultivos"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMenu"
+        app:layout_constraintEnd_toEndOf="@+id/imgMenu"
+        app:layout_constraintStart_toStartOf="@+id/imgMenu"
+        app:layout_constraintTop_toTopOf="@+id/imgMenu"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <TextView
+        android:id="@+id/txtCultivosActivos"
+        android:layout_width="75dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Cultivos Activos"
+        android:textColor="#212121"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMisCultivos"
+        app:layout_constraintEnd_toEndOf="@+id/imgMenu"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toEndOf="@+id/txtMisCultivos"
+        app:layout_constraintTop_toTopOf="@+id/txtMisCultivos" />
+
+    <TextView
+        android:id="@+id/txtCultivosTotales"
+        android:layout_width="67dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Cultivos Totales"
+        android:textColor="#212121"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMisCultivos"
+        app:layout_constraintEnd_toStartOf="@+id/txtMisCultivos"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtMisCultivos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtNumCultivosActivos"
+        android:layout_width="10dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textColor="#212121"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMenu"
+        app:layout_constraintEnd_toEndOf="@+id/txtCultivosActivos"
+        app:layout_constraintStart_toStartOf="@+id/txtCultivosActivos"
+        app:layout_constraintTop_toBottomOf="@+id/txtCultivosActivos"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/txtNumCultivosTotales"
+        android:layout_width="7dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="3"
+        android:textColor="#212121"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMenu"
+        app:layout_constraintEnd_toEndOf="@+id/txtCultivosTotales"
+        app:layout_constraintStart_toStartOf="@+id/txtCultivosTotales"
+        app:layout_constraintTop_toBottomOf="@+id/txtCultivosTotales"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgCuadroPlantas1"
+        android:layout_width="372dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgCuadroPlantas2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMenu"
+        app:srcCompat="@drawable/imgcuadroplantas" />
+
+    <ImageView
+        android:id="@+id/imgCuadroPlantas3"
+        android:layout_width="372dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCuadroPlantas2"
+        app:srcCompat="@drawable/imgcuadroplantas" />
+
+    <ImageView
+        android:id="@+id/imgCuadroPlantas2"
+        android:layout_width="372dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCuadroPlantas1"
+        app:srcCompat="@drawable/imgcuadroplantas" />
+
+    <ImageView
+        android:id="@+id/imgCuadroPlantasTitulo1"
+        android:layout_width="167dp"
+        android:layout_height="57dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintEnd_toStartOf="@+id/imgCuadroPlantas2"
+        app:layout_constraintStart_toEndOf="@+id/imgCuadroPlantas2"
+        app:layout_constraintTop_toBottomOf="@+id/imgCuadroPlantas2"
+        app:layout_constraintVertical_bias="0.301"
+        app:srcCompat="@drawable/imgcuadroplantastitulo" />
+
+    <ImageView
+        android:id="@+id/imgCuadroPlantasTitulo2"
+        android:layout_width="167dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgCuadroPlantas2"
+        app:layout_constraintEnd_toStartOf="@+id/imgCuadroPlantas1"
+        app:layout_constraintStart_toEndOf="@+id/imgCuadroPlantas1"
+        app:layout_constraintTop_toBottomOf="@+id/imgCuadroPlantas1"
+        app:layout_constraintVertical_bias="0.283"
+        app:srcCompat="@drawable/imgcuadroplantastitulo" />
+
+    <ImageView
+        android:id="@+id/imgCuadroPlantasTitulo3"
+        android:layout_width="167dp"
+        android:layout_height="57dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/imgCuadroPlantas1"
+        app:layout_constraintEnd_toStartOf="@+id/imgMenu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgMenu"
+        app:layout_constraintTop_toBottomOf="@+id/imgMenu"
+        app:layout_constraintVertical_bias="0.283"
+        app:srcCompat="@drawable/imgcuadroplantastitulo" />
+
+    <TextView
+        android:id="@+id/txtOregano"
+        android:layout_width="72dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Oregano"
+        android:textAlignment="center"
+        android:textColor="#212121"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCuadroPlantasTitulo3"
+        app:layout_constraintEnd_toEndOf="@+id/imgCuadroPlantasTitulo3"
+        app:layout_constraintStart_toStartOf="@+id/imgCuadroPlantasTitulo3"
+        app:layout_constraintTop_toTopOf="@+id/imgCuadroPlantasTitulo3" />
+
+    <TextView
+        android:id="@+id/txtMenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Perejil"
+        android:textAlignment="center"
+        android:textColor="#212121"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCuadroPlantasTitulo2"
+        app:layout_constraintEnd_toEndOf="@+id/imgCuadroPlantasTitulo2"
+        app:layout_constraintStart_toStartOf="@+id/imgCuadroPlantasTitulo2"
+        app:layout_constraintTop_toTopOf="@+id/imgCuadroPlantasTitulo2" />
+
+    <TextView
+        android:id="@+id/txtAlbahaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Albahaca"
+        android:textAlignment="center"
+        android:textColor="#212121"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCuadroPlantasTitulo1"
+        app:layout_constraintEnd_toEndOf="@+id/imgCuadroPlantasTitulo1"
+        app:layout_constraintStart_toStartOf="@+id/imgCuadroPlantasTitulo1"
+        app:layout_constraintTop_toTopOf="@+id/imgCuadroPlantasTitulo1" />
+
+    <ImageButton
+        android:id="@+id/btnRelojOregano"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/menuitem_background"
+        app:layout_constraintBottom_toTopOf="@+id/imgCuadroPlantasTitulo2"
+        app:layout_constraintEnd_toEndOf="@+id/imgCuadroPlantasTitulo3"
+        app:layout_constraintStart_toStartOf="@+id/imgCuadroPlantasTitulo3"
+        app:layout_constraintTop_toTopOf="@+id/imgCuadroPlantasTitulo3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/imgiconoreloj" />
+
+    <ImageButton
+        android:id="@+id/btnRelojMenta"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@android:drawable/menuitem_background"
+        app:layout_constraintBottom_toTopOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintEnd_toEndOf="@+id/imgCuadroPlantasTitulo2"
+        app:layout_constraintStart_toStartOf="@+id/imgCuadroPlantasTitulo2"
+        app:layout_constraintTop_toTopOf="@+id/txtMenta"
+        app:srcCompat="@drawable/imgiconoreloj" />
+
+    <ImageButton
+        android:id="@+id/btnRelojAlbahaca"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+
+        android:layout_marginBottom="8dp"
+
+        android:background="@android:drawable/menuitem_background"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintEnd_toEndOf="@+id/imgCuadroPlantasTitulo1"
+        app:layout_constraintStart_toStartOf="@+id/imgCuadroPlantasTitulo1"
+        app:layout_constraintTop_toTopOf="@+id/imgCuadroPlantasTitulo1"
+        app:layout_constraintVertical_bias="0.7"
+        app:srcCompat="@drawable/imgiconoreloj" />
+
+    <Switch
+        android:id="@+id/switchPlanta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:defaultValue="true"
+        android:shadowColor="@android:color/darker_gray"
+
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCuadroPlantas1"
+        app:layout_constraintEnd_toEndOf="@id/imgCuadroPlantas1"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/btnRelojOregano"
+        app:layout_constraintTop_toTopOf="@+id/imgCuadroPlantas1"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Switch
+        android:id="@+id/switchPlanta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:defaultValue="true"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/txtAlbahaca"
+        app:layout_constraintEnd_toEndOf="@+id/imgCuadroPlantas2"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toEndOf="@+id/btnRelojMenta"
+        app:layout_constraintTop_toTopOf="@+id/txtMenta"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <Switch
+        android:id="@+id/switchPlanta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:defaultValue="false"
+        android:textColor="@android:color/darker_gray"
+
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toEndOf="@+id/btnRelojAlbahaca"
+        app:layout_constraintTop_toTopOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <ImageButton
+        android:id="@+id/btnMenuLateral"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/menuitem_background"
+
+        app:layout_constraintBottom_toTopOf="@+id/imgFondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFondo"
+        app:layout_constraintVertical_bias="0.85"
+        app:srcCompat="@drawable/ic_dehaze">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btnEstadoOregano"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:background="@android:drawable/menuitem_background"
+        android:src="@drawable/imgiconoestado"
+        app:layout_constraintBottom_toTopOf="@+id/imgCuadroPlantas1"
+        app:layout_constraintEnd_toStartOf="@+id/imgCuadroPlantas1"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toEndOf="@+id/imgCuadroPlantas1"
+        app:layout_constraintTop_toBottomOf="@+id/imgCuadroPlantas1"
+        app:layout_constraintVertical_bias="0.565" />
+
+    <ImageButton
+        android:id="@+id/btnEstadoMenta"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:background="@android:drawable/menuitem_background"
+        android:src="@drawable/imgiconoestado"
+        app:layout_constraintBottom_toTopOf="@+id/imgCuadroPlantas2"
+        app:layout_constraintEnd_toStartOf="@+id/imgCuadroPlantas2"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toEndOf="@+id/imgCuadroPlantas2"
+        app:layout_constraintTop_toBottomOf="@+id/imgCuadroPlantas2"
+        app:layout_constraintVertical_bias="0.565" />
+
+    <ImageButton
+        android:id="@+id/btnEstadoAlbahaca"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:background="@android:drawable/menuitem_background"
+        android:src="@drawable/imgiconoestado"
+        app:layout_constraintBottom_toTopOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintEnd_toStartOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toEndOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintTop_toBottomOf="@+id/imgCuadroPlantas3"
+        app:layout_constraintVertical_bias="0.565" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constGrande">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constDialogo"
+        android:layout_width="310dp"
+        android:layout_height="327dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/imgfondodialogo" />
+        <ImageView
+            android:id="@+id/imgFondoDias"
+            android:layout_width="278dp"
+            android:layout_height="54dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.714"
+            app:srcCompat="@drawable/imgfondodias" />
+
+        <TextView
+            android:id="@+id/txtDomingo"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:text="D"
+            android:textColor="#212121"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgFondoDias"
+            app:layout_constraintEnd_toEndOf="@+id/imgFondoDias"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="@+id/imgFondoDias"
+            app:layout_constraintTop_toTopOf="@+id/imgFondoDias"
+
+            app:layout_constraintVertical_bias="0.55" />
+
+        <TextView
+            android:id="@+id/txtLunes"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+
+
+            android:text="L"
+            android:textColor="#212121"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgFondoDias"
+            app:layout_constraintEnd_toEndOf="@+id/imgFondoDias"
+            app:layout_constraintHorizontal_bias="0.21"
+            app:layout_constraintStart_toStartOf="@+id/imgFondoDias"
+            app:layout_constraintTop_toTopOf="@+id/imgFondoDias"
+
+            app:layout_constraintVertical_bias="0.55" />
+
+        <TextView
+            android:id="@+id/txtMartes"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:text="M"
+            android:textColor="#212121"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgFondoDias"
+            app:layout_constraintEnd_toEndOf="@+id/imgFondoDias"
+            app:layout_constraintHorizontal_bias="0.348"
+            app:layout_constraintStart_toStartOf="@+id/imgFondoDias"
+            app:layout_constraintTop_toTopOf="@+id/imgFondoDias"
+
+            app:layout_constraintVertical_bias="0.55" />
+
+        <TextView
+            android:id="@+id/txtMiercoles"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:text="X"
+            android:textColor="#212121"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgFondoDias"
+            app:layout_constraintEnd_toEndOf="@+id/imgFondoDias"
+            app:layout_constraintStart_toStartOf="@+id/imgFondoDias"
+            app:layout_constraintTop_toTopOf="@+id/imgFondoDias"
+
+            app:layout_constraintVertical_bias="0.55" />
+
+        <TextView
+            android:id="@+id/txtJueves"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+
+            android:text="J"
+            android:textColor="#212121"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgFondoDias"
+            app:layout_constraintEnd_toEndOf="@+id/imgFondoDias"
+            app:layout_constraintHorizontal_bias="0.643"
+            app:layout_constraintStart_toStartOf="@+id/imgFondoDias"
+            app:layout_constraintTop_toTopOf="@+id/imgFondoDias"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <TextView
+            android:id="@+id/txtViernes"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+
+            android:text="V"
+            android:textColor="#212121"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgFondoDias"
+            app:layout_constraintEnd_toEndOf="@+id/imgFondoDias"
+            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintStart_toStartOf="@+id/imgFondoDias"
+            app:layout_constraintTop_toTopOf="@+id/imgFondoDias"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <TextView
+            android:id="@+id/txtSabado"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+
+            android:text="S"
+            android:textColor="#212121"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgFondoDias"
+            app:layout_constraintEnd_toEndOf="@+id/imgFondoDias"
+            app:layout_constraintHorizontal_bias="0.937"
+            app:layout_constraintStart_toStartOf="@+id/imgFondoDias"
+            app:layout_constraintTop_toTopOf="@+id/imgFondoDias"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <ImageView
+            android:id="@+id/imgiconoreloj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toTopOf="@+id/imgFondoDias"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgiconorelojdearena"
+
+            app:srcCompat="@drawable/imgiconoreloj" />
+
+        <ImageView
+            android:id="@+id/imgiconorelojdearena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toTopOf="@+id/imgiconoreloj"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:srcCompat="@drawable/imgiconorelojdearena" />
+
+        <TextView
+            android:id="@+id/txtDuracionDelRiego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Duración del Riego"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtVarDuracionDelRiego"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toEndOf="@+id/imgiconorelojdearena"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtHoradeInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Hora de inicio"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtVarHoraDeInicio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toEndOf="@+id/imgiconoreloj"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtVarDuracionDelRiego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="45m"
+            android:textColor="#212121"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toEndOf="@+id/imgiconorelojdearena"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.297" />
+
+        <TextView
+            android:id="@+id/txtVarHoraDeInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="13:00"
+            android:textColor="#212121"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/imgFondoDias"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toEndOf="@+id/imgiconoreloj"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btnEntendido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:drawable/menuitem_background"
+            android:text="Entendido"
+            android:textAllCaps="false"
+            android:textColor="#212121"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.969" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
